@@ -2,14 +2,6 @@ FROM ubuntu:22.04
 
 WORKDIR /app
 
-# Define environment variables
-ENV COUNTRY PT
-ENV STATE MAFRA
-ENV CITY LISBON
-ENV ORGANIZATION "My Company"
-ENV ORG_UNIT "IT Department"
-ENV COMMON_NAME "iwatch Client"
-
 # Install dependencies
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
